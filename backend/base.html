@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!--=====================================
+                    META TAG PART START
+        =======================================-->
+        <!-- REQUIRE META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- AUTHOR META -->
+        <meta name="author" content="mironcoder">
+        <meta name="email" content="mironcoder@gmail.com">
+        <meta name="profile" content="https://themeforest.net/user/mironcoder">
+
+        <!-- TEMPLATE META -->
+        <meta name="name" content="Greeny">
+        <meta name="title" content="Greeny - eCommerce HTML Template">
+        <meta name="keywords" content="organic, food, shop, ecommerce, store, html, bootstrap, template, agriculture, vegetables, webshop, farm, grocery, natural, online store">
+        <!--=====================================
+                    META-TAG PART END
+        =======================================-->
+
+        <!-- WEBPAGE TITLE -->
+        <title>Dragonfly Drones</title>
+
+        <!--=====================================
+                    CSS LINK PART START
+        =======================================-->
+        {% block css %}
+
+        <!-- Block for custom css content -->
+
+        {% endblock %}
+
+        <!--=====================================
+                    CSS LINK PART END
+        =======================================-->
+    </head>
+    <body ng-app="">
+        <div class="backdrop"></div>
+        <a class="backtop fas fa-arrow-up" href="#"></a>
+
+
+
+        <!--=====================================
+                    HEADER PART START
+        =======================================-->
+
+        <header class="header-part">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-media-group">
+                        <button class="header-user"><img src="/static/images/user.png" alt="user"></button>
+                        <a href="{{url_for('products')}}"><img src="/static/images/logo.png" alt="logo"></a>
+                        <button class="header-src"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <a href="{{url_for('products')}}" class="header-logo">
+                        <img src="/static/images/logo.png" alt="logo">
+                    </a>
+                    <ul class="dropdown">
+                    <a class="navbar-link dropdown-arrow" href="#">My Account</a>
+                                    <ul class="dropdown-position-list">
+                                        <li><a href="{{url_for('profile')}}">Account Info</a></li>
+                                        <li><a href="{{url_for('clear')}}">Logout</a></li>
+                                    </ul>
+                    </ul>
+
+                    <form class="header-form">
+                        <input type="text" placeholder="Search anything...">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+
+                    <div class="header-widget-group">
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--=====================================
+                    HEADER PART END
+        =======================================-->
+
+        <!--=====================================
+                    NAVBAR PART START
+        =======================================-->
+        <nav class="navbar-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navbar-content">
+                            <ul class="navbar-list">
+                                <li class="navbar-item dropdown">
+                                    <a class="navbar-link" href="{{url_for('products')}}">Products</a>
+                                </li>
+
+                                <li class="navbar-item dropdown">
+                                    <a class="navbar-link active" href="{{url_for('orders')}}">Orders</a>
+                                </li>
+
+                                <li class="navbar-item dropdown">
+                                    <a class="navbar-link" href="{{url_for('reports')}}">Reports</a>
+                                </li>
+
+                                <li class="navbar-item dropdown">
+                                    <a class="navbar-link" href="{{url_for('accounts', userType='customer')}}">Accounts</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--=====================================
+                    NAVBAR PART END
+        =======================================-->
+
+
+
+
+
+
+        <!--=====================================
+                    SHOP PART START
+        =======================================-->
+
+        {% block content %}
+
+        <!-- Block for main content of page -->
+
+        {% endblock %}
+
+        <!--=====================================
+                    SHOP PART END
+        =======================================-->
+
+
+
+        <!--=====================================
+                     FOOTER PART START
+        =======================================-->
+        <footer style="background-color: gray" class="footer-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="footer-widget">
+                            <a class="footer-logo" href="#">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <p class="footer-desc">This e-commerce template has been created for the sole purpose of aiding the students for the Databases course</p>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="footer-widget contact">
+                            <h3 class="footer-title">contact us</h3>
+                            <ul class="footer-contact">
+                                <li>
+                                    <i class="icofont-ui-email"></i>
+                                    <p>
+                                        <span>javier.quinones3@upr.edu</span>
+                                        <span>eliana.valenzuela@upr.edu</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-touch-phone"></i>
+                                    <p>
+                                        <span>+787 597 7369</span>
+                                        <span>N/A</span>
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Quick Links</h3>
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="https://github.com/CCOM-UPRA">Github</a></li>
+                                    <li><a href="http://upra.edu/">upra.edu</a></li>
+                                    <li><a href="https://cursos.upra.edu/course/search.php?areaids=core_course-course&q=ccom4115-ME5">cursos.upra.edu</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=Z1RJmh_OqeA">Flask tutorial</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">HTML tutorial</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8">Python tutorial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Students of CCOM4115</h3>
+                            <p class="footer-desc">Do not hesitate to reach out to the professor or TA with any questions.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </footer>
+        <!--=====================================
+                      FOOTER PART END
+        =======================================-->
+
+
+        <!--=====================================
+                    JS LINK PART START
+        =======================================-->
+
+        {% block js %}
+
+        <!-- Block for custom js scripts -->
+
+        {% endblock %}
+
+        <!--=====================================
+                    JS LINK PART END
+        =======================================-->
+    </body>
+</html>
